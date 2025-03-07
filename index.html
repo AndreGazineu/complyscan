@@ -478,7 +478,7 @@
         const pdf2 = await carregamento2.promise;
         const pagina1 = await pdf1.getPage(1);
         const pagina2 = await pdf2.getPage(1);
-        const escala = 2;
+        const escala = 6;
         const viewport1 = pagina1.getViewport({ scale: escala });
         const viewport2 = pagina2.getViewport({ scale: escala });
         const largura = Math.min(viewport1.width, viewport2.width);
