@@ -383,7 +383,7 @@
           const dadosPDF = e.target.result;
           pdfjsLib.getDocument({ data: dadosPDF }).promise.then(pdf => {
             pdf.getPage(1).then(page => {
-              const escala = 4;
+              const escala = 6;
               const viewport = page.getViewport({ scale: escala });
               const canvas = document.createElement("canvas");
               canvas.width = viewport.width;
